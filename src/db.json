@@ -1,0 +1,67 @@
+{
+  "comments": [
+    {
+      "id": 1,
+      "book": "The Blade Itself",
+      "user": "fantasy_fan123",
+      "content": "Logen Ninefingers is one of the most compelling characters I've ever read. Abercrombie's gritty style is refreshing!",
+      "rating": 5
+    },
+    {
+      "id": 2,
+      "book": "Before They Are Hanged",
+      "user": "grimdark_lover",
+      "content": "The character development in this book is outstanding. Glokta's chapters are always a highlight.",
+      "rating": 4
+    },
+    {
+      "id": 3,
+      "book": "Last Argument of Kings",
+      "user": "bookworm42",
+      "content": "What an ending! Abercrombie really knows how to subvert expectations. Bayaz is such a complex character.",
+      "rating": 5
+    },
+    {
+      "id": 4,
+      "book": "Best Served Cold",
+      "user": "revenge_story_enthusiast",
+      "content": "Monza's quest for revenge is brutal and captivating. The way Abercrombie weaves in characters from the original trilogy is masterful.",
+      "rating": 5
+    },
+    {
+      "id": 5,
+      "book": "The Heroes",
+      "user": "history_buff",
+      "content": "The way this book captures the chaos and futility of war is incredible. Gorst's inner monologue is both hilarious and disturbing.",
+      "rating": 4
+    },
+    {
+      "id": 6,
+      "book": "Red Country",
+      "user": "western_fantasy_fan",
+      "content": "A perfect blend of fantasy and western themes. The return of a certain character had me cheering!",
+      "rating": 4
+    },
+    {
+      "id": 7,
+      "book": "A Little Hatred",
+      "user": "industrial_revolution_nerd",
+      "content": "Abercrombie does an amazing job of showing how technology changes society. Savine is a fascinating character.",
+      "rating": 5
+    },
+    {
+      "id": 8,
+      "book": "The Trouble With Peace",
+      "user": "political_intrigue_lover",
+      "content": "The political maneuvering in this book is top-notch. Orso's development is particularly well-done.",
+      "rating": 4
+    },
+    {
+      "id": 9,
+      "book": "The Wisdom of Crowds",
+      "user": "revolution_enthusiast",
+      "content": "A fitting end to the trilogy. The way Abercrombie explores the consequences of revolution is thought-provoking.",
+      "rating": 5
+    }
+  ]
+}
