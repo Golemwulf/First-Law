@@ -1,20 +1,21 @@
 import React from 'react';
 import { Container, Row, Col, Image } from 'react-bootstrap';
+import Author from '../assets/Joe-Abercrombie.jpg';
+
 
 function AboutAuthor() {
   return (
     <Container className="my-5">
       <Row>
         <Col md={4}>
-          <Image 
-          // need to find a photo of Joe Abercrombie
-            src="https://upload.wikimedia.org/wikipedia/commons/7/7e/Joe_Abercrombie_2019.jpg" 
+          <Image src={Author}
             alt="Joe Abercrombie" 
             fluid 
             rounded
           />
         </Col>
-        <Col md={8}>
+        {/* I found this font on google fonts. I thought it looked nice and fitting for the series' tone */}
+        <Col md={8} className='new-amsterdam-regular'>
           <h2>Joe Abercrombie</h2>
           <p>
             Joe Abercrombie is a British fantasy writer and film editor. He is the author of 

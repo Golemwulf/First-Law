@@ -1,5 +1,9 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card, ListGroup } from 'react-bootstrap';
+import cover from '../assets/Last_argument_of_kings_cover.jpg';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
+
 
 function LastArgumentOfKings() {
   return (
@@ -7,7 +11,7 @@ function LastArgumentOfKings() {
       <Row>
         <Col md={4}>
           <Image 
-            src="https://upload.wikimedia.org/wikipedia/en/c/ce/LastArgumentOfKings%28USCover%29.jpg" 
+            src={cover}
             alt="Last Argument of Kings Book Cover" 
             fluid 
             className="mb-3"
@@ -22,7 +26,7 @@ function LastArgumentOfKings() {
             </ListGroup>
           </Card>
         </Col>
-        <Col md={8}>
+        <Col md={8} className='new-amsterdam-regular'>
           <h2>Last Argument of Kings</h2>
           <h4 className="text-muted">by Joe Abercrombie</h4>
           <p className="lead">
@@ -66,8 +70,10 @@ function LastArgumentOfKings() {
             plotting, and the depth of his character development. The book solidified Abercrombie's reputation 
             as a leading voice in modern fantasy literature.
           </p>
+      <Link to="/original">Back to Original Trilogy</Link>
         </Col>
       </Row>
+
     </Container>
   );
 }

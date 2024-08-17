@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card, ListGroup } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import cover from '../assets/little-hatred-cover.jpg';
 
 function ALittleHatred() {
   return (
@@ -7,22 +9,22 @@ function ALittleHatred() {
       <Row>
         <Col md={4}>
           <Image 
-            src="https://upload.wikimedia.org/wikipedia/en/1/18/A_Little_Hatred_%28Joe_Abercrombie_novel%29.jpg" 
+            src={cover}
             alt="A Little Hatred Book Cover" 
             fluid 
             className="mb-3"
           />
-          <Card>
-            <Card.Header>Book Details</Card.Header>
+          <Card >
+            <Card.Header className='new-amsterdam-regular'>Book Details</Card.Header>
             <ListGroup variant="flush">
-              <ListGroup.Item><strong>Author:</strong> Joe Abercrombie</ListGroup.Item>
-              <ListGroup.Item><strong>Published:</strong> September 17, 2019</ListGroup.Item>
-              <ListGroup.Item><strong>Series:</strong> The Age of Madness #1</ListGroup.Item>
-              <ListGroup.Item><strong>Genre:</strong> Dark Fantasy</ListGroup.Item>
+              <ListGroup.Item className='new-amsterdam-regular'><strong>Author:</strong> Joe Abercrombie</ListGroup.Item>
+              <ListGroup.Item className='new-amsterdam-regular'><strong>Published:</strong> September 17, 2019</ListGroup.Item>
+              <ListGroup.Item className='new-amsterdam-regular'><strong>Series:</strong> The Age of Madness #1</ListGroup.Item>
+              <ListGroup.Item className='new-amsterdam-regular'><strong>Genre:</strong> Dark Fantasy</ListGroup.Item>
             </ListGroup>
           </Card>
         </Col>
-        <Col md={8}>
+        <Col md={8} className='new-amsterdam-regular'>
           <h2>A Little Hatred</h2>
           <h4 className="text-muted">by Joe Abercrombie</h4>
           <p className="lead">
@@ -47,6 +49,7 @@ function ALittleHatred() {
             <li>The struggle between tradition and progress</li>
             <li>The cyclical nature of history and conflict</li>
           </ul>
+          <Link to = '/age-of-madness'>Back to Age of Madness Trilogy</Link>
         </Col>
       </Row>
     </Container>

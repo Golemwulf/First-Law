@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card, ListGroup } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import cover from '../assets/heroes-cover.jpg';
 
 function TheHeroes() {
   return (
@@ -7,7 +9,7 @@ function TheHeroes() {
       <Row>
         <Col md={4}>
           <Image 
-            src="https://upload.wikimedia.org/wikipedia/en/5/5d/The_Heroes_%28Joe_Abercrombie_novel%29.jpg" 
+            src={cover}
             alt="The Heroes Book Cover" 
             fluid 
             className="mb-3"
@@ -22,7 +24,7 @@ function TheHeroes() {
             </ListGroup>
           </Card>
         </Col>
-        <Col md={8}>
+        <Col md={8} className='new-amsterdam-regular'>
           <h2>The Heroes</h2>
           <h4 className="text-muted">by Joe Abercrombie</h4>
           <p className="lead">
@@ -47,6 +49,7 @@ function TheHeroes() {
             <li>The nature of heroism and cowardice</li>
             <li>The impact of individual actions in large-scale conflicts</li>
           </ul>
+          <Link to='/standalone'>Back to Standalone Books</Link>
         </Col>
       </Row>
     </Container>

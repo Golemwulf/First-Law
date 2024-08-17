@@ -1,5 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card, ListGroup } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import cover from '../assets/before-they-are-hanged-cover.jpg';
+
 
 function BeforeTheyAreHanged() {
   return (
@@ -7,7 +10,7 @@ function BeforeTheyAreHanged() {
       <Row>
         <Col md={4}>
           <Image 
-            src="https://upload.wikimedia.org/wikipedia/en/4/4d/Before_They_Are_Hanged.jpg" 
+            src={cover}
             alt="Before They Are Hanged Book Cover" 
             fluid 
             className="mb-3"
@@ -22,7 +25,7 @@ function BeforeTheyAreHanged() {
             </ListGroup>
           </Card>
         </Col>
-        <Col md={8}>
+        <Col md={8} className='new-amsterdam-regular'>
           <h2>Before They Are Hanged</h2>
           <h4 className="text-muted">by Joe Abercrombie</h4>
           <p className="lead">
@@ -62,9 +65,11 @@ function BeforeTheyAreHanged() {
             the first book. Critics noted Abercrombie's skill in subverting fantasy tropes and his unflinching 
             portrayal of the brutal realities of war and politics.
           </p>
+      <Link to="/original">Back to Original Trilogy</Link>
         </Col>
       </Row>
     </Container>
+
   );
 }
 

@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card, ListGroup } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import cover from '../assets/best-served-cold-cover.jpg';
 
 function BestServedCold() {
   return (
@@ -7,7 +9,7 @@ function BestServedCold() {
       <Row>
         <Col md={4}>
           <Image 
-            src="https://upload.wikimedia.org/wikipedia/en/7/79/Best_Served_Cold_%28Joe_Abercrombie_novel%29.jpg" 
+            src={cover} 
             alt="Best Served Cold Book Cover" 
             fluid 
             className="mb-3"
@@ -22,7 +24,7 @@ function BestServedCold() {
             </ListGroup>
           </Card>
         </Col>
-        <Col md={8}>
+        <Col md={8} className='new-amsterdam-regular'>
           <h2>Best Served Cold</h2>
           <h4 className="text-muted">by Joe Abercrombie</h4>
           <p className="lead">
@@ -48,6 +50,7 @@ function BestServedCold() {
             <li>The cost of violence on the human psyche</li>
             <li>The cyclical nature of betrayal and retribution</li>
           </ul>
+          <Link to='/standalone'>Back to Standalone Books</Link>
         </Col>
       </Row>
     </Container>

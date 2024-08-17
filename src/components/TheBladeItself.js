@@ -1,13 +1,15 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card, ListGroup } from 'react-bootstrap';
+import cover from '../assets/blade-itself-cover.jpg';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 
 function TheBladeItself() {
   return (
     <Container className="my-5">
       <Row>
-        <Col md={4}>
+        <Col md={4} className='new-amsterdam-regular'>
           <Image 
-            src="https://upload.wikimedia.org/wikipedia/en/8/81/The_Blade_Itself.jpg" 
+            src={cover}
             alt="The Blade Itself Book Cover" 
             fluid 
             className="mb-3"
@@ -58,6 +60,7 @@ function TheBladeItself() {
             and subversion of traditional fantasy tropes. It established Joe Abercrombie as a significant 
             voice in the dark fantasy subgenre.
           </p>
+      <Link to="/original">Back to Original Trilogy</Link>
         </Col>
       </Row>
     </Container>

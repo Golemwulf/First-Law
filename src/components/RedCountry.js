@@ -1,5 +1,8 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card, ListGroup } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+
+import cover from '../assets/red-country-cover.jpg';
 
 function RedCountry() {
   return (
@@ -7,7 +10,7 @@ function RedCountry() {
       <Row>
         <Col md={4}>
           <Image 
-            src="https://upload.wikimedia.org/wikipedia/en/2/2e/Red_Country_%28Joe_Abercrombie_novel%29.jpg" 
+            src={cover}
             alt="Red Country Book Cover" 
             fluid 
             className="mb-3"
@@ -22,7 +25,7 @@ function RedCountry() {
             </ListGroup>
           </Card>
         </Col>
-        <Col md={8}>
+        <Col md={8} className='new-amsterdam-regular'>
           <h2>Red Country</h2>
           <h4 className="text-muted">by Joe Abercrombie</h4>
           <p className="lead">
@@ -47,6 +50,7 @@ function RedCountry() {
             <li>Redemption and the weight of past actions</li>
             <li>The blurred lines between savagery and civilization</li>
           </ul>
+          <Link to='/standalone'>Back to Standalone Books</Link>
         </Col>
       </Row>
     </Container>

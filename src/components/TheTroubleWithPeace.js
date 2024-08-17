@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card, ListGroup } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import cover from '../assets/trouble-with-peace-cover.jpg';
 
 function TheTroubleWithPeace() {
   return (
@@ -7,7 +9,7 @@ function TheTroubleWithPeace() {
       <Row>
         <Col md={4}>
           <Image 
-            src="https://upload.wikimedia.org/wikipedia/en/9/96/The_Trouble_with_Peace.jpg" 
+            src={cover} 
             alt="The Trouble With Peace Book Cover" 
             fluid 
             className="mb-3"
@@ -22,7 +24,7 @@ function TheTroubleWithPeace() {
             </ListGroup>
           </Card>
         </Col>
-        <Col md={8}>
+        <Col md={8} className='new-amsterdam-regular'>
           <h2>The Trouble With Peace</h2>
           <h4 className="text-muted">by Joe Abercrombie</h4>
           <p className="lead">
@@ -49,6 +51,7 @@ function TheTroubleWithPeace() {
             <li>The price of ambition and power</li>
             <li>The conflict between individual desires and societal needs</li>
           </ul>
+          <Link to = '/age-of-madness'>Back to Age of Madness Trilogy</Link>
         </Col>
       </Row>
     </Container>

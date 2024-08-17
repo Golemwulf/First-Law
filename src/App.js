@@ -1,8 +1,10 @@
 import React from 'react';
+// The imports below allow me to use React Router in my app to create a single-page application
 import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
 import { NIL as NIL_UUID } from 'uuid';
 import { Container, Nav, Navbar } from 'react-bootstrap';
 import 'bootstrap/dist/css/bootstrap.min.css';
+import './App.css';
 import OriginalTrilogy from './components/OriginalTrilogy';
 import StandaloneBooks from './components/StandaloneBooks';
 import AgeOfMadness from './components/AgeOfMadness';
@@ -15,12 +17,16 @@ import LastArgumentOfKings from './components/LastArgumentOfKings';
 import BestServedCold from './components/BestServedCold';
 import TheHeroes from './components/TheHeroes';
 import RedCountry from './components/RedCountry';
+import ALittleHatred from './components/ALittleHatred';
+import TheTroubleWithPeace from './components/TheTroubleWithPeace';
+import TheWisdomOfCrowds from './components/TheWisdomOfCrowds';
 
 function App() {
   return (
     <Router>
+      {/* Below is the nav bar for my site. */}
       <div className="App">
-        <Navbar bg="dark" variant="dark" expand="lg">
+        <Navbar bg="dark" variant="dark" expand="lg" className='bodoni'>
           <Container>
             <Navbar.Brand as={Link} to="/">First Law Series</Navbar.Brand>
             <Nav className="me-auto">
@@ -35,6 +41,7 @@ function App() {
         </Navbar>
         <Container className="mt-4">
           <Routes>
+            {/* These are the different pages that I want the be able to link to. This allows me to set up links in other components. */}
             <Route path="/" element={<Home />} />
             <Route path="/about-author" element={<AboutAuthor/>} />
             <Route path="/original" element={<OriginalTrilogy />} />
@@ -47,7 +54,10 @@ function App() {
             <Route path="/best-served-cold" element={<BestServedCold />} />
             <Route path="/the-heroes" element={<TheHeroes />} />
             <Route path="/red-country" element={<RedCountry />} />
-          </Routes>
+            <Route path="/a-little-hatred" element={<ALittleHatred/>} />
+            <Route path="/the-trouble-with-peace" element={<TheTroubleWithPeace/>} />
+            <Route path="/the-wisdom-of-crowds" element={<TheWisdomOfCrowds/>} />
+            </Routes>
         </Container>
       </div>
     </Router>

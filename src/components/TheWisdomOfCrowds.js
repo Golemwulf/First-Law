@@ -1,5 +1,7 @@
 import React from 'react';
 import { Container, Row, Col, Image, Card, ListGroup } from 'react-bootstrap';
+import { BrowserRouter as Router, Route, Routes, Link } from 'react-router-dom';
+import cover from '../assets/wisdom-of-the-crowds-cover.jpg';
 
 function TheWisdomOfCrowds() {
   return (
@@ -7,7 +9,7 @@ function TheWisdomOfCrowds() {
       <Row>
         <Col md={4}>
           <Image 
-            src="https://upload.wikimedia.org/wikipedia/en/8/8d/The_Wisdom_of_Crowds.jpg" 
+            src={cover}
             alt="The Wisdom of Crowds Book Cover" 
             fluid 
             className="mb-3"
@@ -22,7 +24,7 @@ function TheWisdomOfCrowds() {
             </ListGroup>
           </Card>
         </Col>
-        <Col md={8}>
+        <Col md={8} className='new-amsterdam-regular'>
           <h2>The Wisdom of Crowds</h2>
           <h4 className="text-muted">by Joe Abercrombie</h4>
           <p className="lead">
@@ -51,6 +53,7 @@ function TheWisdomOfCrowds() {
             <li>The wisdom (or folly) of crowds</li>
             <li>The cyclical nature of power and oppression</li>
           </ul>
+          <Link to = '/age-of-madness'>Back to Age of Madness Trilogy</Link>
         </Col>
       </Row>
     </Container>
